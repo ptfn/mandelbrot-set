@@ -6,8 +6,8 @@ import numpy as np
 class Fractal():
     def __init__(self):
         self.pmin, self.pmax, self.qmin, self.qmax = -2.5, 1.5, -2, 2
-        self.ppoints, self.qpoints = 800, 600
-        self.max_iter = 300
+        self.ppoints, self.qpoints = 2048, 2048
+        self.max_iter = 100
         self.infinity_border = 10
 
         self.image = Image.new("RGB", (self.ppoints, self.qpoints))

@@ -21,6 +21,7 @@ class Fractal():
                 
                 for k in range(self.max_iter):
                     z = z ** 2 + c
+                    
                     if abs(z) > self.infinity_border:
                         self.draw.point((ip, iq), fill=ImageColor.getrgb("white"))
                         break
